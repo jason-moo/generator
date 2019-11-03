@@ -19,15 +19,18 @@ public class GenerateUtils {
 
     private static String passwd = "7356241";
 
-    private static String packetageDTO = "com.xkeshi.wcoupon.dtos";
 
-    private static String packetageDAO = "com.xkeshi.wcoupon.dao";
+    private  static String basePath = "com.xkeshi.wcoupon";
 
-    private static String packetagePojo = "com.xkeshi.wcoupon.entities";
+    private static String packetageDTO =  basePath + ".dtos";
 
-    private static String packetageService = "com.xkeshi.wcoupon.services.localServices";
+    private static String packetageDAO = basePath +  ".dao";
 
-    private static String packetageServiceImpl = "com.xkeshi.wcoupon.service.localImpl";
+    private static String packetagePojo = basePath + ".entities";
+
+    private static String packetageService = basePath + ".service.localServices";
+
+    private static String packetageServiceImpl = basePath + ".service.localImpl";
 
     public static void main(String[] args) {
         getData(getConnection(),null);
